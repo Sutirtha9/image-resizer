@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 :root
 {
     --gradientColor: linear-gradient(45deg,#ff96a7,#008cff);
 }
+
 *
 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Century Gothic',sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Century Gothic", sans-serif;
     font-size: 16px;
 }
+
 body
 {
     display: flex;
@@ -19,56 +21,53 @@ body
     width: 100vw;
     height: 100vh;
     align-items: center;
-    background-image: url('bg.jpg');
-
-    /*Parallax Effect*/
+    background-image: url("/assets/bg.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 ::-webkit-scrollbar
 {
     display: none;
 }
-::-webkit-scrollbar-button
-{
-    background-color: #008cff;
-}
+
 @keyframes slideLeft
 {
     from
     {
-        transform: translateX(100%);
+        transform: translateX(80%);
     }
+
     to
     {
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 }
+
 header
 {
     margin-top: 10%;
     margin-right: 30%;
     animation: slideLeft 1s forwards;
 }
+
 header p.h1
 {
-    font-size: 8vw;
     font-family: "Archivo Black", sans-serif;
-    background: url('textt.jpg') no-repeat;
-    background-size: cover;
-    -webkit-background-clip: text;
-    background-clip: text;
+    background: url("/assets/te.jpg");
     color: transparent;
     animation: slideLeft 1s forwards;
 }
+
 header p.h3
 {
     font-size: 4.5vw;
     font-family: "Lobster", sans-serif;
     animation: slideLeft 1.5s forwards;
 }
+
 header p.h3 i
 {
     font-size: 2vw;
@@ -78,35 +77,40 @@ header p.h3 i
     padding-top: 10%;
     color: #494949;
 }
-header p#text3
-{
+
+header p#text3 {
     font-size: 1.5vw;
-    animation: slideLeft 1.75s forwards;
 }
+
 main
 {
+    display: flex;
+    justify-content: center;
     padding: 3% 5%;
+    width: 100vw;
 }
-@media (max-width: 425px)
+
+.imgUpload
+{
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    border: 0.3vw dashed rgb(0, 56, 121);
+    border-radius: 30px;
+    animation: slideLeft 1.75s forwards;
+    backdrop-filter: blur(7px);
+    width: 50%;
+}
+
+.imgUpload .btn-group .btn
+{
+    outline-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 425px)
 {
     header
     {
-        margin-right: 0;
-    }
-    header p.h1
-    {
-        font-size: 17vw;
-    }
-    header p.h3
-    {
-        font-size: 11vw;
-    }
-    header p.h3 i
-    {
-        font-size: 4.5vw;
-    }
-    header p#text3
-    {
-        font-size: 2.5vw;
+        margin-right: 0px;
     }
 }
