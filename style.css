@@ -57,6 +57,9 @@ header p.h1
 {
     font-family: "Archivo Black", sans-serif;
     background: url("/assets/te.jpg");
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     animation: slideLeft 1s forwards;
 }
