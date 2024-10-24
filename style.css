@@ -55,8 +55,9 @@ header
 
 header p.h1
 {
+    font-size: 8vw;
     font-family: "Archivo Black", sans-serif;
-    background: url("https://static.vecteezy.com/system/resources/previews/003/066/685/large_2x/mountain-and-lake-illustration-with-moonlight-vector.jpg");
+    background: url("/assets/te.jpg");
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
