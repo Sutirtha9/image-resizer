@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root
+{
+    --gradientColor: linear-gradient(45deg,#ff96a7,#008cff);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic',sans-serif;
+    font-size: 16px;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-image: url('bg.jpg');
+
+    /*Parallax Effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
+::-webkit-scrollbar-button
+{
+    background-color: #008cff;
+}
+@keyframes slideLeft
+{
+    from
+    {
+        transform: translateX(100%);
+    }
+    to
+    {
+        transform: translateX(0);
+    }
+}
+header
+{
+    margin-top: 10%;
+    margin-right: 30%;
+    animation: slideLeft 1s forwards;
+}
+header p.h1
+{
+    font-size: 8vw;
+    font-family: "Archivo Black", sans-serif;
+    background: url('textt.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: slideLeft 1s forwards;
+}
+header p.h3
+{
+    font-size: 4.5vw;
+    font-family: "Lobster", sans-serif;
+    animation: slideLeft 1.5s forwards;
+}
+header p.h3 i
+{
+    font-size: 2vw;
+    transform: rotate(130deg);
+    position: absolute;
+    left: 20.5%;
+    padding-top: 10%;
+    color: #494949;
+}
+header p#text3
+{
+    font-size: 1.5vw;
+    animation: slideLeft 1.75s forwards;
+}
+main
+{
+    padding: 3% 5%;
+}
+@media (max-width: 425px)
+{
+    header
+    {
+        margin-right: 0;
+    }
+    header p.h1
+    {
+        font-size: 17vw;
+    }
+    header p.h3
+    {
+        font-size: 11vw;
+    }
+    header p.h3 i
+    {
+        font-size: 4.5vw;
+    }
+    header p#text3
+    {
+        font-size: 2.5vw;
+    }
+}
