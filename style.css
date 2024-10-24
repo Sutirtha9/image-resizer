@@ -82,10 +82,10 @@ header p.h3 i
     color: #494949;
 }
 
-header p#text3 {
+header p#text3
+{
     font-size: 1.5vw;
 }
-
 main
 {
     display: flex;
@@ -99,7 +99,7 @@ main
     justify-content: center;
     align-items: center;
     padding: 15%;
-    border: 0.3vw dashed rgb(0, 56, 121);
+    border: 0.3vw dashed #003879;
     border-radius: 30px;
     animation: slideLeft 1.75s forwards;
     backdrop-filter: blur(7px);
@@ -110,11 +110,30 @@ main
 {
     outline-color: rgb(255, 255, 255);
 }
-
-@media screen and (max-width: 425px)
+main
+{
+    padding: 3% 5%;
+}
+@media (max-width: 425px)
 {
     header
     {
-        margin-right: 0px;
+        margin-right: 0;
+    }
+    header p.h1
+    {
+        font-size: 17vw;
+    }
+    header p.h3
+    {
+        font-size: 11vw;
+    }
+    header p.h3 i
+    {
+        font-size: 4.5vw;
+    }
+    header p#text3
+    {
+        font-size: 2.5vw;
     }
 }
